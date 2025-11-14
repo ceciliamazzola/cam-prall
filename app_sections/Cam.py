@@ -21,6 +21,16 @@ def render():
         body, .stApp, p, label, .section-title, .section-sub {
             color: #000000 !important;
         }
+
+        /* 🔽 stile per il bottone 'Okay, let's play 💚' (e in generale tutti i bottoni) */
+        .stButton > button {
+            color: #ffffff !important;           /* testo bianco */
+            background-color: #1b4332 !important; /* verde scuro */
+            border-radius: 999px !important;
+            border: none !important;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+        }
     </style>
     """, unsafe_allow_html=True)
 
@@ -58,7 +68,7 @@ def render():
 
     # ---------- 1. ABOUT YOU (HER SECTION) ----------
     st.markdown(
-        '<div class="section-title cam-text-black">1 · About you (tiny autobiography) ✨</div>',
+        '<div class="section-title cam-text-black">1 · About you</div>',
         unsafe_allow_html=True
     )
     st.markdown(

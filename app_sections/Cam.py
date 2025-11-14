@@ -255,13 +255,18 @@ def render():
         [
             "Speak only in Italian",
             "Speak only in memes and random sounds",
-            "Whisper everything",
+            "Speak only in Spanish",
             "Talk in that weird half-whisper people use when they argue in a library"
         ],
         key="cam_weird_day",
         index=None,
         label_visibility="collapsed"
     )
+    if q7 == "Speak only in Italian":
+        st.warning("Ottimo, non vedo l'ora di insegnarti tutti i modi di dire 🤌🏻")
+    if q7 == "Speak only in Spanish":
+        st.warning("Chica, no tengo ni idea de qué podría pasar, ya que literalmente solo conozco a Chica, Sangría, Hola y Papatas Bravas.👀")    
+
 
     st.markdown(
         '<p class="cam-text-black" style="margin-top:0.8rem;"><b>'

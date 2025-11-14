@@ -68,7 +68,7 @@ def render():
 
     # ---------- 1. ABOUT YOU (HER SECTION) ----------
     st.markdown(
-        '<div class="section-title cam-text-black">1 · About you</div>',
+        '<div class="section-title cam-text-black">1 · About you 🍒</div>',
         unsafe_allow_html=True
     )
     st.markdown(

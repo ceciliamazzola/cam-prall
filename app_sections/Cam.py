@@ -135,6 +135,23 @@ def render():
         placeholder="A song, a drink, a person, a hug, a walk…",
         height=120
     )
+# 1e) Famous person dinner
+    st.markdown(
+        '<p class="cam-text-black" style="margin-top:1rem;"><b>'
+        "If you could have dinner with any famous person (alive or not), who would it be?"
+        "</b></p>",
+        unsafe_allow_html=True
+    )
+    dinner_person = st.text_input(
+        "Famous dinner guest",
+        key="cam_dinner_person",
+        label_visibility="collapsed",
+        placeholder="Actor, singer, writer, historical figure… whoever you want ✨"
+    )
+
+    if dinner_person.strip():
+        st.info(f"Noted. Dinner with **{dinner_person}** is officially on the imaginary bucket list. 🍽️")
+
 
     
     # ---------- 2. WOULD YOU RATHER (TRAVEL / VIBES) ----------
@@ -307,7 +324,7 @@ def render():
 
     # commento speciale per "Right now"
     if q9 == "Right now":
-        st.success("This is the only acceptable answer. 😌✨")
+        st.success("Of course, this is the only acceptable answer. 😌✨")
 
     st.markdown("---")
 
@@ -371,7 +388,7 @@ def render():
         "Ideal weekend",
         key="cam_ideal_weekend",
         label_visibility="collapsed",
-        placeholder="Slow morning? Road trip? Picnic? Movies? Mountains? Tell me everything... 🫶",
+        placeholder="Slow morning? Road trip? Picnic? Movies? Mountains? Tell me everything...",
         height=180
     )
 

@@ -177,6 +177,9 @@ def render_home():
             <div class="hero-title">
                 HAPPY BIRTHDAY CAM!
             </div>
+            <div style="font-style:italic; color:#2b6b4a; margin-bottom:0.3rem;">
+                December 16th, 2025
+            </div>    
             <div class="hero-subtitle">
                 May your 27th year be as stunning as the sunsets you have shared with me
             </div>
